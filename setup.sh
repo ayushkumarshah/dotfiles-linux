@@ -20,6 +20,7 @@ sudo apt install -y vim
 sudo apt install -y gimp
 sudo apt install -y htop
 sudo apt install -y tmux
+sudo apt install -y pavucontrol
 
 # Install Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ~/Downloads
@@ -39,7 +40,6 @@ pip3 install --user bpython
 pip3 install --user pandas
 pip3 install --user html5lib
 pip3 install --user matplotlib
-pip3 install --user rise # Installs jupyter notebook as well
 
 # Machine Learning Libraries
 pip3 install --user tensorflow
@@ -48,6 +48,7 @@ pip3 install --user scikit-learn
 pip3 install --user scikit-image
 pip3 install --user seaborn
 pip3 install --user sklearn
+pip3 install --user numpy
 
 # Install visual studio code
 sudo snap install --classic code
@@ -145,3 +146,11 @@ sudo apt install -y arandr
 
 # Remove dunst notifications and replace by normal notifications
 sudo apt-get purge dunst
+
+# Install nix and xidlehook for autolock
+curl https://nixos.org/nix/install | sh
+. ~/.nix-profile/etc/profile.d/nix.sh
+nix-env --install xidlehook
+chmod +x ~/.config/i3/autolock
+
+conda install rise

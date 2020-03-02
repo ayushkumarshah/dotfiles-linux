@@ -109,7 +109,7 @@ bindsym $mod+a focus parent
 
 set $workspace1 "1 "
 set $workspace2 "2 "
-set $workspace3 "3 G"
+set $workspace3 "3"
 set $workspace4 "4"
 set $workspace9 "9 "
 # switch to workspace
@@ -265,7 +265,7 @@ exec "google-chrome --password-store=gnome"
 # exec todoist 
 
 # autolock after three minutes (180 seconds)
-# exec "/home/ayush/.config/i3/autolock 150"
+exec "autolock 150"
 
 #logout and all
 set $mode_system System (e) lock, (l) logout, (p) suspend, (h) hibernate, (r) reboot, (s) shutdown

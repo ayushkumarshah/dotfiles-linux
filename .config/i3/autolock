@@ -1,24 +1,22 @@
 #!/bin/sh
-xidlehook --not-when-fullscreen --not-when-audio --timer normal $1 "i3lock-fancy -t ''" '' --timer normal 900 "systemctl suspend" ''
 
 # Only exported variables can be used within the timer's command.
-# export PRIMARY_DISPLAY="$(xrandr | awk '/ primary/{print $1}')"
-
-# # Run xidlehook
-# xidlehook \
-#   `# Don't lock when there's a fullscreen application` \
-#   --not-when-fullscreen \
-#   `# Don't lock when there's audio playing` \
-#   --not-when-audio \
-#   `# Dim the screen after 60 seconds, undim if user becomes active` \
-#   --timer 10 \
-#     'xrandr --output "$PRIMARY_DISPLAY" --brightness .1' \
-#     'xrandr --output "$PRIMARY_DISPLAY" --brightness 1' \
-#   `# Undim & lock after 10 more seconds` \
-#   --timer 10 \
-#     'xrandr --output "$PRIMARY_DISPLAY" --brightness 1; i3lock-fancy' \
-#     '' \
-#   `# Finally, suspend an hour after it locks` \
-#   --timer 1800 \
-#     'systemctl suspend' \
-    # ''
+export brightness="$(light)"
+# Run xidlehook
+xidlehook \
+  `# Don't lock when there's a fullscreen application` \
+  --not-when-fullscreen \
+  `# Don't lock when there's audio playing` \
+  --not-when-audio \
+  `# Dim the screen after t seconds, undim if user becomes active` \
+  --timer $1 \
+    'light -S .1' \
+    '' \
+  `# Undim & lock after 5 more seconds` \
+  --timer 5 \
+    'light -S $brightness; i3lock-fancy' \
+    '' \
+  `# Finally, suspend an hour after it locks` \
+  --timer 900 \
+    'systemctl suspend' \
+    ''

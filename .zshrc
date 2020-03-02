@@ -132,3 +132,4 @@ alias python="python3"
 alias pip="pip3"
 
 export PATH=$HOME/miniconda3/bin:$PATH
+export PATH=$HOME/.config/i3/:$PATH
