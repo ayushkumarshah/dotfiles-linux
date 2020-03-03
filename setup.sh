@@ -68,7 +68,9 @@ sudo snap install postman
 sudo snap install spotify
 
 # Install todoist
-sudo snap install todoist-thibaut
+# sudo snap install todoist-thibaut
+wget https://github.com/cyfrost/todoist-linux/releases/download/v1.0/Todoist_1.0.0_amd64.deb -P ~/Downloads/
+sudo apt install -y ~/Downloads/Todoist*.deb
 
 ## Configurations
 # Show more apps in the startup applications
@@ -77,7 +79,7 @@ sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
 # Install Miniconda 
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -P ~/Downloads
 chmod +x ~/Downloads/Miniconda3-latest-Linux-x86_64.sh
-./Downloads/Miniconda3-latest-Linux-x86_64.sh 
+. ~/Downloads/Miniconda3-latest-Linux-x86_64.sh 
 
 # Install Pycharm Professional 
 sudo snap install pycharm-professional --classic
@@ -107,7 +109,7 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 
 # Install powerline fonts for agnoster theme
 git clone https://github.com/powerline/fonts.git
-./fonts/install.sh
+. ~/fonts/install.sh
 
 # Ohmyzsh plugins
 sudo apt install -y autojump

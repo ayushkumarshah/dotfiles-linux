@@ -7,9 +7,8 @@ chsh -s $(which zsh)
 ```
 ## Logout and login, then run setup.sh
 ```
-ln -svf ~/Desktop/dotfiles-linux/setup.sh ~
-chmod +x setup.sh
-./setup.sh
+chmod +x ~/Desktop/dotfiles-linux/setup.sh
+. ~/Desktop/dotfiles-linux/setup.sh
 ```
 
 ## Repeated steps
