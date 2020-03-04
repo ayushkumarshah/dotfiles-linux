@@ -37,6 +37,7 @@ pip3 install --user virtualenv
 pip3 install --user requests
 pip3 install --user bs4
 pip3 install --user bpython
+pip install --user jupyter
 pip3 install --user pandas
 pip3 install --user html5lib
 pip3 install --user matplotlib
@@ -69,7 +70,7 @@ sudo snap install spotify
 
 # Install todoist
 # sudo snap install todoist-thibaut
-wget https://github.com/cyfrost/todoist-linux/releases/download/v1.0/Todoist_1.0.0_amd64.deb -P ~/Downloads/
+wget https://github.com/KryDos/todoist-linux/releases/download/1.19/Todoist_1.19.0_amd64.deb -P ~/Downloads/
 sudo apt install -y ~/Downloads/Todoist*.deb
 
 ## Configurations
@@ -93,6 +94,9 @@ sudo apt-get install -y -f
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.0.2-amd64.deb -P ~/Downloads
 sudo apt install -y ./Downloads/slack-desktop-*.deb
 
+# Install Libre Office
+sudo snap install libreoffice
+
 # Install AWS-CLI
 sudo python -m pip install --upgrade awscli
 
@@ -100,6 +104,10 @@ sudo python -m pip install --upgrade awscli
 wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
 echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
 sudo apt update -y && sudo apt install -y dbeaver-ce
+
+# Install viber
+wget https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb -P ~/Downloads
+sudo apt install -y ~/Downloads/viber.deb
 
 # Install Latex 
 # sudo apt-get install -y texlive-full
@@ -155,4 +163,18 @@ curl https://nixos.org/nix/install | sh
 nix-env --install xidlehook
 chmod +x ~/.config/i3/autolock
 
-conda install rise
+# Cuda and tesnoorflow-gpu
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin -P ~/Downloads
+sudo mv ~/Downloads/cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
+wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda-repo-ubuntu1804-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb -p ~/Downloads
+sudo dpkg -i ~/Downloads/cuda-repo-ubuntu1804-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb
+sudo apt-key add /var/cuda-repo-10-2-local-10.2.89-440.33.01/7fa2af80.pub
+sudo apt-get update
+sudo apt-get -y install cuda
+
+# Cudnn runtime library
+wget https://developer.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.2_20191118/Ubuntu18_04-x64/libcudnn7_7.6.5.32-1%2Bcuda10.2_amd64.deb -P ~/Downloads
+sudo apt install -y ~/Downloads/libcudnn7_*.deb
+wget https://developer.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.2_20191118/Ubuntu18_04-x64/libcudnn7-dev_7.6.5.32-1%2Bcuda10.2_amd64.deb -P ~/Downloads
+sudo apt install -y ~/Downloads/libcudnn7-dev*.deb
+

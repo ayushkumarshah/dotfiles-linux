@@ -287,6 +287,6 @@ bindsym Control+Mod1+Delete mode "$mode_system"
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
 
 # Multiple monitors
-# exec xrandr --output eDP-1-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal
+exec xrandr --output eDP-1-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal
 # Moving workspaces between screens 
 bindsym $mod+p move workspace to output right
