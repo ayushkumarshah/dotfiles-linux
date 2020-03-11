@@ -21,7 +21,7 @@ sudo apt install -y gimp
 sudo apt install -y htop
 sudo apt install -y tmux
 sudo apt install -y pavucontrol
-
+sudo apt install -y tree
 # Install Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ~/Downloads
 sudo apt install -y ~/Downloads/google-chrome-stable_current_amd64.deb
@@ -105,12 +105,23 @@ wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
 echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
 sudo apt update -y && sudo apt install -y dbeaver-ce
 
+# Install kazam screen recorder
+sudo add-apt-repository ppa:kazam-team/stable-series
+sudo apt-get update
+sudo apt-get install kazam
+
 # Install viber
 wget https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb -P ~/Downloads
 sudo apt install -y ~/Downloads/viber.deb
 
+# Install fontawesome package (for latex as well)
+sudo apt-get install -y fonts-font-awesome
+
 # Install Latex 
 # sudo apt-get install -y texlive-full
+# Install gummmi and latex
+wget http://kr.archive.ubuntu.com/ubuntu/pool/universe/g/gummi/gummi_0.6.6-4_amd64.deb -P ~/Downloads
+sudo apt install -y ~/Downloads/gummi*.deb
 
 # Install ohmyzsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
@@ -151,6 +162,9 @@ sudo apt install -y ./Downloads/playerctl_2.0.1-1_amd64.deb ./Downloads/libplaye
 # Install rofi for i3wm
 sudo apt install -y rofi
 
+# Install compton for transparency effect
+sudo apt-get install -y compton
+
 # Install arandr to manage multiple displays
 sudo apt install -y arandr
 
@@ -178,3 +192,4 @@ sudo apt install -y ~/Downloads/libcudnn7_*.deb
 wget https://developer.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.2_20191118/Ubuntu18_04-x64/libcudnn7-dev_7.6.5.32-1%2Bcuda10.2_amd64.deb -P ~/Downloads
 sudo apt install -y ~/Downloads/libcudnn7-dev*.deb
 
+conda install pandas numpy tensorflow scikit-learn scikit-image requests jupyter html5lib matplotlib  wheel seaborn
