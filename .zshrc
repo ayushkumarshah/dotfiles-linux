@@ -129,7 +129,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 alias python="python3"
-alias pip="pip3"
+# alias pip="pip3"
 
 # export PATH=$HOME/miniconda3/bin:$PATH
 export PATH=$HOME/.config/i3/:$PATH
@@ -141,3 +141,8 @@ export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRAR
 
 # Protobuf path for tensorflow object detection API
 export PATH=$HOME/Desktop/Google_Protobuf/bin:$PATH
+
+export PYTHONPATH=$PYTHONPATH:$HOME/Desktop/SimpleHuman/TensorFlow/models/research/object_detection
+
+# From within tensorflow/models/research/
+export PYTHONPATH=$PYTHONPATH:$HOME/Desktop/SimpleHuman/TensorFlow/models/research:$HOME/Desktop/SimpleHuman/TensorFlow/models/research/slim
