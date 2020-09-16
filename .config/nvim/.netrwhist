@@ -1,7 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/ayush/.config/nvim'
-let g:netrw_dirhist_2='/media/ayush/New Volume/FuseMachines/projects/Fuse Extract V2/fuse-extract-v2-ai'
-let g:netrw_dirhist_3='/media/ayush/New Volume/FuseMachines/projects/Fuse Extract V2/fuse-extract-v2-ai/fuse'
-let g:netrw_dirhist_4='/media/ayush/New Volume/FuseMachines/projects/Fuse Extract V2/fuse-extract-v2-ai/fuse/extract'
-let g:netrw_dirhist_5='/media/ayush/New Volume/FuseMachines/projects/Fuse Extract V2/fuse-extract-v2-ai'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/ayushkumarshah/Desktop/dotfiles-mac'
