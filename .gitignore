@@ -6,3 +6,6 @@
 .config/coc/*
 .config/configstore
 .config/nvim/session
+.config/ranger/bookmarks
+.config/ranger/history
+.config/htop/
