@@ -123,6 +123,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Bullets for markdown
     Plug 'dkarter/bullets.vim'
     Plug 'justinmk/vim-sneak' 
+    " Highlight csv / tsv columns in sifferent colours.
+    Plug 'mechatroner/rainbow_csv'
     call plug#end()
 
 
