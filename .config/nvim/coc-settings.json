@@ -24,15 +24,15 @@
     "graphql",
     "html",
     "yaml",
-    "json",
-    "python"
+    "json"
+    // "python"
   ],
   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/miniconda3/bin/black",
- //  "python.condaPath": "~/miniconda3/bin/conda/",
+  //  "python.condaPath": "~/miniconda3/bin/conda/",
   "python.jediEnabled": true,
   "python.jediPath": "~/miniconda3/lib/python3.8/site-packages",
   // snippets
