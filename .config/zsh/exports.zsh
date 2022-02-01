@@ -28,14 +28,21 @@ fi
 # export PATH=/usr/bin/python3:$PATH
 # export HOMEBREW_BUNDLE_FILE=~/.Brewfile
 
-export LgEvalDir="/home/$USER/Desktop/MathSeer/qdgga/tools/lgeval-myfork"
+export LgEvalDir="/home/$USER/Desktop/MathSeer/qdgga/tools/lgeval"
 export CROHMELibDir="/home/$USER/Desktop/MathSeer/qdgga/tools/crohmelib"     
 export PATH=$PATH:$CROHMELibDir/bin:$LgEvalDir/bin
-export QDGGA_TOOLS="/home/$USER/Desktop/MathSeer/qdgga/tools/"
-export PATH=$PATH:$QDGGA_TOOLS
+export PYTHONPATH=$PYTHONPATH:`dirname $CROHMELibDir`:`dirname $LgEvalDir`:
+# export QDGGA_TOOLS="/home/$USER/Desktop/MathSeer/qdgga/tools/"
+# export PATH=$PATH:$QDGGA_TOOLS
 export PATH=$PATH:/home/$USER/bin
 
 # Cuda 10.1
 export PATH=$PATH:/usr/local/cuda-10.1/bin
 export CUDADIR=/usr/local/cuda-10.1
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+export PYTHONPATH=$PYTHONPATH:/home/as1211/Desktop/MathSeer/qdgga/tools:

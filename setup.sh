@@ -138,6 +138,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # Make symlinks for dotfiles
 ln -svf ~/Desktop/dotfiles/linux/.zshrc ~
 ln -svf ~/Desktop/dotfiles/linux/.config/* ~/config/
+ln -svf ~/Desktop/dotfiles/linux/.tmux.conf/* ~/.tmux.conf/
 ln -svf ~/Desktop/dotfiles/linux/.fonts ~
 
 # Install i3 window manager

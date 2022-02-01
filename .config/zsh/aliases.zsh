@@ -1,2 +1,3 @@
 alias python="python3"
-alias vim="nvim"
+alias vim="~/Downloads/nvim.appimage"
+alias nvim="~/Downloads/nvim.appimage"

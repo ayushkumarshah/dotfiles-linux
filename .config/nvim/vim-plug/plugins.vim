@@ -124,7 +124,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'dkarter/bullets.vim'
     Plug 'justinmk/vim-sneak' 
     " Highlight csv / tsv columns in sifferent colours.
-    Plug 'mechatroner/rainbow_csv'
+    " Plug 'mechatroner/rainbow_csv'
+    " Native LSP
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'hrsh7th/nvim-compe'
+    Plug 'kabouzeid/nvim-lspinstall'
+
+    " Vim Snippets
+    Plug 'hrsh7th/vim-vsnip'
+    Plug 'hrsh7th/vim-vsnip-integ'
     call plug#end()
 
 
