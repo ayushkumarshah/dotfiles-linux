@@ -1,7 +1,7 @@
 # Neovim
-sudo add-apt-repository ppa:neovim-ppa/stable
-sudo apt-get -y update
-sudo apt-get -y install neovim
+# sudo add-apt-repository ppa:neovim-ppa/stable
+# sudo apt-get -y update
+# sudo apt-get -y install neovim
 
 # FZF
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -18,6 +18,7 @@ sudo apt install -y  ranger
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 pip install ueberzug
 
-pip install pynvim
-pip install jedi
+# pip install pynvim
+# pip install jedi
+pip install pynvim==0.4.2 jedi==0.17.2
 
