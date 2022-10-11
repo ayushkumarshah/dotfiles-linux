@@ -100,8 +100,14 @@ sh Miniconda3-latest-Linux-x86_64.sh
 
 - Download stable nvim.appimage (0.6.1) from github releases:
 ```  
-wget https://github.com/neovim/neovim/releases/download/v0.6.1/nvim.appimage
+mkdir ~/Downloads
+wget https://github.com/neovim/neovim/releases/download/v0.6.1/nvim.appimage ~/Downloads/
 chmod u+x nvim.appimage
+
+# OR
+cp nvim.appimage ~/Downloads/
+
+
 ```
 
 - Set alias of vim and nvim to nvim.appimage (Already done in dotfiles above)
@@ -124,7 +130,7 @@ chmod u+x nvim.appimage
   * sudo npm i -g pyright bash-language-server
   * If doesn't work, comment all lua in init.vim, plugins nvim-lspconfig
       (already done)
-- Run :CocInstall coc-python coc-pyright
+- Run :CocInstall coc-pyright
 - Run `sh .config/nvim/scripts/install_coc_extensions.sh`
 
 ## Softwares
