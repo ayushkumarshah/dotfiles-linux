@@ -41,11 +41,11 @@ source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/nerd-commenter.vim
 source $HOME/.config/nvim/plug-config/sneak.vim
 
-luafile $HOME/.config/nvim/lua/plug-colorizer.lua
-source $HOME/.config/nvim/plug-config/lsp-config.vim
-luafile $HOME/.config/nvim/lua/lsp/lspinstall.lua
-luafile $HOME/.config/nvim/lua/lsp/compe-config.lua
-luafile $HOME/.config/nvim/lua/lsp/python-lsp.lua
+" luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+" source $HOME/.config/nvim/plug-config/lsp-config.vim
+" luafile $HOME/.config/nvim/lua/lsp/lspinstall.lua
+" luafile $HOME/.config/nvim/lua/lsp/compe-config.lua
+" luafile $HOME/.config/nvim/lua/lsp/python-lsp.lua
 
 " source $HOME/.config/nvim/plug-config/rainbow_parantheses.vim
 " source $HOME/.config/nvim/plug-config/vim-wiki.vim

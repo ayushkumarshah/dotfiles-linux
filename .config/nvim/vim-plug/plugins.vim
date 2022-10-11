@@ -126,9 +126,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Highlight csv / tsv columns in sifferent colours.
     " Plug 'mechatroner/rainbow_csv'
     " Native LSP
-    Plug 'neovim/nvim-lspconfig'
-    Plug 'hrsh7th/nvim-compe'
-    Plug 'kabouzeid/nvim-lspinstall'
+    " Plug 'neovim/nvim-lspconfig'
+    " Plug 'hrsh7th/nvim-compe'
+    " Plug 'kabouzeid/nvim-lspinstall'
 
     " Vim Snippets
     Plug 'hrsh7th/vim-vsnip'
