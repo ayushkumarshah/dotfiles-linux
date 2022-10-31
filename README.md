@@ -89,6 +89,13 @@ git clone git@github.com:ayushkumarshah/dotfiles-linux.git
   ln -svf ~/dotfiles-linux/.tmux/tmux.conf ~/.tmux.conf
   cp ~/dotfiles-linux/.fonts/* ~/.fonts/
  ```
+### Install tmux plugins
+
+```zsh
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Press prefix + I (capital i, as in Install) to fetch the plugin.
 
 ## Install miniconda
 ```zsh
