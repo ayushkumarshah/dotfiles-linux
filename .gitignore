@@ -1,6 +1,7 @@
 .vscode
 .DS_Store
 .config/nvim/autoload/plugged/*
+.config/nvim/autoload
 .config/ranger/plugins/ranger_devicons
 .config/tmux
 .config/coc/*
