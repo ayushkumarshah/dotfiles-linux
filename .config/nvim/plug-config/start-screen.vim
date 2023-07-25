@@ -39,7 +39,7 @@ let g:startify_bookmarks = [
             \ { 'z': '~/.zshrc' },
             \ {'b': '~/Desktop/Blog_writing/ayushkumarshah.github.io'},
             \ {'d': '~/Desktop/dotfiles-mac'},
-            \ {'n': '~/Desktop/notes/wiki/index.md'},
+            \ {'n': '~/Desktop/notes/wiki/README.md'},
             \ {'c': '~/Desktop/Blog_writing/ayushkumarshah.github.io/_posts/2020-08-12-common-commands.md'},
             \ ]
 

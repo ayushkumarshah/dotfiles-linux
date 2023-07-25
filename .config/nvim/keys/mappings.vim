@@ -67,3 +67,8 @@ nnoremap <silent> <M-l>    :vertical resize +2<CR>
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
+
+" Compile function for pandoc and python
+map <leader>c :w! \| !compile <c-r>%<CR><CR>
+" Open output pdf or html
+map <leader>o :!opout <c-r>%<CR><CR>

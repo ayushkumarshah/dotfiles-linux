@@ -28,8 +28,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'
     " Add color for paranthesis
     Plug 'luochen1990/rainbow'
-  " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
     " Cool icons for explorer
     Plug 'ryanoasis/vim-devicons'
     " Auto pairs for '(' '[' '{'
@@ -69,6 +67,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'junegunn/goyo.vim'
     " Snippets
     Plug 'honza/vim-snippets'
+    Plug 'SirVer/ultisnips'
     " Plug 'mattn/emmet-vim'
     " Interactive code
     Plug 'metakirby5/codi.vim'
