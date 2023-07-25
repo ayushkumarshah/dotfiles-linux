@@ -1,5 +1,4 @@
 " General Settings
-source $HOME/.config/nvim/plug-config/polyglot.vim
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/general/functions.vim
@@ -25,6 +24,7 @@ source $HOME/.config/nvim/plug-config/start-screen.vim
 " source $HOME/.config/nvim/plug-config/floaterm.vim
 " source $HOME/.config/nvim/plug-config/vista.vim
 " source $HOME/.config/nvim/plug-config/xtabline.vim
+source $HOME/.config/nvim/plug-config/polyglot.vim
 source $HOME/.config/nvim/plug-config/far.vim
 " source $HOME/.config/nvim/plug-config/tagalong.vim
 source $HOME/.config/nvim/plug-config/illuminate.vim
@@ -42,7 +42,6 @@ source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/ulti-snips.vim
 
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
-
 source $HOME/.config/nvim/plug-config/lsp-config.vim
 " luafile $HOME/.config/nvim/lua/lsp/lspinstall.lua
 " luafile $HOME/.config/nvim/lua/lsp/compe-config.lua
