@@ -52,3 +52,5 @@ set textwidth=80
 set wrapmargin=0
 set formatoptions+=t
 set linebreak
+
+set clipboard+=unnamedplus
