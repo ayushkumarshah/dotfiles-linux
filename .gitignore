@@ -11,3 +11,4 @@
 .config/ranger/history
 .config/htop/
 .tmux/plugins
+.tmux/resurrect
