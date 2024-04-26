@@ -47,6 +47,8 @@ source $HOME/.config/nvim/plug-config/lsp-config.vim
 " luafile $HOME/.config/nvim/lua/lsp/compe-config.lua
 luafile $HOME/.config/nvim/lua/lsp/python-lsp.lua
 
+source $HOME/.config/nvim/plug-config/vimtex.vim
+
 " source $HOME/.config/nvim/plug-config/rainbow_parantheses.vim
 " source $HOME/.config/nvim/plug-config/vim-wiki.vim
 " source $HOME/.config/nvim/plug-config/waikiki.vim

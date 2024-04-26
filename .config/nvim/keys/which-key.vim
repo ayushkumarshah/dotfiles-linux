@@ -37,7 +37,7 @@ let g:which_key_map['d'] = [ ':Bdelete'                   , 'delete buffer']
 let g:which_key_map['e'] = [ ':CocCommand explorer'       , 'explorer' ]
 " let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
-let g:which_key_map['p'] = [ ':MarkdownPreview'           , 'markdown-preview']
+" let g:which_key_map['p'] = [ ':MarkdownPreview'           , 'markdown-preview']
 let g:which_key_map['q'] = [ 'q'                          , 'quit' ]
 let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
 " let g:which_key_map['S'] = [ ':SSave'                     , 'save session' ]
@@ -48,6 +48,13 @@ let g:which_key_map['W'] = [ 'w'                          , 'write' ]
 " let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 
 " Group mappings
+let g:which_key_map.p = {
+      \ 'name' : '+preview' ,
+      \ 'm' : [ ':MarkdownPreview'           , 'markdown-preview'],
+      \ 'l' : [ ':VimtexCompile'             , 'latex: compile and view pdf'],
+      \ 'v' : [ ':VimtexView'                , 'latex: Forward search: vim/tex to pdf'],
+      \ 's' : [ ':VimtexClean'               , 'latex: stop and clean compilation'],
+      \ }
 
 " a is for actions
 let g:which_key_map.a = {
