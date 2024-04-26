@@ -31,10 +31,9 @@ fi
 # My scripts
 export PATH="/home/$USER/scripts:$PATH"
 
-export LgEvalDir="/home/$USER/Desktop/MathSeer/MathSeer_latest/modules/lgeval"
+export LgEvalDir="/home/$USER/Desktop/MathSeer/qdgga/tools/lgeval"
 export CROHMELibDir="/home/$USER/Desktop/MathSeer/qdgga/tools/crohmelib"     
 export PATH=$PATH:$CROHMELibDir/bin:$LgEvalDir/bin:$LgEvalDir/convert2symLG
-export PYTHONPATH=$PYTHONPATH:`dirname $CROHMELibDir`:`dirname $LgEvalDir`
 # export QDGGA_TOOLS="/home/$USER/Desktop/MathSeer/qdgga/tools/"
 # export PATH=$PATH:$QDGGA_TOOLS
 export PATH=$PATH:/home/$USER/bin
@@ -47,5 +46,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-
-export PYTHONPATH=$PYTHONPATH:/home/as1211/Desktop/MathSeer/qdgga/tools
+export PYTHONPATH=$PYTHONPATH:$(dirname "$CROHMELibDir"):$(dirname "$LgEvalDir"):
+# export PYTHONPATH=$PYTHONPATH:/home/as1211/Desktop/MathSeer/qdgga/tools
