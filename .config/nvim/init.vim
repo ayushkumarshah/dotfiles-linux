@@ -51,6 +51,8 @@ source $HOME/.config/nvim/plug-config/ulti-snips.vim
 " source $HOME/.config/nvim/plug-config/vim-wiki.vim
 " source $HOME/.config/nvim/plug-config/waikiki.vim
 
+source $HOME/.config/nvim/plug-config/vimtex.vim
+
 " Add paths to node and python here
 if !empty(glob("~/.config/nvim/paths.vim"))
   source $HOME/.config/nvim/paths.vim

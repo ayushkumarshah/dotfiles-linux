@@ -132,6 +132,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Vim Snippets
     Plug 'hrsh7th/vim-vsnip'
     Plug 'hrsh7th/vim-vsnip-integ'
+
+    Plug 'fisadev/vim-isort'
+
+    " Plugin for latex
+    Plug 'lervag/vimtex'
     call plug#end()
 
 
