@@ -137,6 +137,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Plugin for latex
     Plug 'lervag/vimtex'
+
+    "Copilot
+    Plug 'github/copilot.vim'
+
     call plug#end()
 
 
