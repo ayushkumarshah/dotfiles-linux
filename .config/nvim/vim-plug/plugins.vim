@@ -68,9 +68,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Snippets
     Plug 'honza/vim-snippets'
     Plug 'SirVer/ultisnips'
+    Plug 'quangnguyen30192/cmp-nvim-ultisnips'
     " Plug 'mattn/emmet-vim'
     " Interactive code
-    Plug 'metakirby5/codi.vim'
+    " Plug 'metakirby5/codi.vim'
     " Debugging
     " Plug 'puremourning/vimspector'
     " Better tabline
@@ -111,8 +112,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
     Plug 'francoiscabrol/ranger.vim'
     " Dependency for ranger in neovim
-    Plug 'rbgrouleff/bclose.vim'
     " Delete buffer using bd
+    Plug 'rbgrouleff/bclose.vim'
     " Plug 'rbgrouleff/bclose.vim'
     " Plug 'vimwiki/vimwiki'
     Plug 'voldikss/vim-floaterm'
@@ -121,17 +122,26 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'zxqfl/tabnine-vim'
     " Bullets for markdown
     Plug 'dkarter/bullets.vim'
-    Plug 'justinmk/vim-sneak' 
+    " Plug 'justinmk/vim-sneak' 
     " Highlight csv / tsv columns in sifferent colours.
     " Plug 'mechatroner/rainbow_csv'
     " Native LSP
-    " Plug 'neovim/nvim-lspconfig'
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'nvim-lua/completion-nvim'
+    Plug 'nvim-lua/diagnostic-nvim'
     " Plug 'hrsh7th/nvim-compe'
+    Plug 'hrsh7th/cmp-nvim-lsp'
+    Plug 'hrsh7th/cmp-buffer'
+    Plug 'hrsh7th/cmp-path'
+    Plug 'hrsh7th/cmp-cmdline'
+    Plug 'hrsh7th/nvim-cmp'
+		Plug 'folke/neodev.nvim',
     " Plug 'kabouzeid/nvim-lspinstall'
 
     " Vim Snippets
-    Plug 'hrsh7th/vim-vsnip'
-    Plug 'hrsh7th/vim-vsnip-integ'
+    " Plug 'hrsh7th/cmp-vsnip'
+    " Plug 'hrsh7th/vim-vsnip'
+    " Plug 'hrsh7th/vim-vsnip-integ'
 
     Plug 'fisadev/vim-isort'
 

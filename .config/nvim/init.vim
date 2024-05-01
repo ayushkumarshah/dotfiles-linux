@@ -12,7 +12,7 @@ source $HOME/.config/nvim/themes/onedark.vim
 " Plugin Configuration
 source $HOME/.config/nvim/plug-config/better-whitespace.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
-source $HOME/.config/nvim/plug-config/coc.vim
+" source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/blamer.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/codi.vim
@@ -42,18 +42,21 @@ source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/ulti-snips.vim
 " luafile $HOME/.config/nvim/plug-config/copilot.lua
 source $HOME/.config/nvim/plug-config/copilot.vim
+source $HOME/.config/nvim/plug-config/vimtex.vim
 
+luafile $HOME/.config/nvim/lua/lsp/python-lsp.lua
 " luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 " source $HOME/.config/nvim/plug-config/lsp-config.vim
 " luafile $HOME/.config/nvim/lua/lsp/lspinstall.lua
 " luafile $HOME/.config/nvim/lua/lsp/compe-config.lua
-" luafile $HOME/.config/nvim/lua/lsp/python-lsp.lua
+luafile $HOME/.config/nvim/lua/lsp/cmp-config.lua
+luafile $HOME/.config/nvim/lua/lsp/lsp-config.lua
+" source $HOME/.config/nvim/plug-config/python-lsp.vim
+" lua require("lsp.lsp-config")
 
 " source $HOME/.config/nvim/plug-config/rainbow_parantheses.vim
 " source $HOME/.config/nvim/plug-config/vim-wiki.vim
 " source $HOME/.config/nvim/plug-config/waikiki.vim
-
-source $HOME/.config/nvim/plug-config/vimtex.vim
 
 " Add paths to node and python here
 if !empty(glob("~/.config/nvim/paths.vim"))
