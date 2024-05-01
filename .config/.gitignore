@@ -1,0 +1,14 @@
+*
+
+!.gitignore
+!/nvim/
+!/nvim/**/*
+/nvim/autoload/
+/nvim/pack/
+/nvim/session
+
+!coc
+!i3
+!ranger
+!zsh
+!rofi
