@@ -12,3 +12,4 @@
 .config/htop/
 .tmux/plugins
 .tmux/resurrect
+neovim/
