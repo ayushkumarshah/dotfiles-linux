@@ -41,6 +41,7 @@ let g:startify_bookmarks = [
             \ {'d': '~/Desktop/dotfiles-mac'},
             \ {'n': '~/Desktop/notes/wiki/README.md'},
             \ {'c': '~/Desktop/Blog_writing/ayushkumarshah.github.io/_posts/2020-08-12-common-commands.md'},
+            \ {'s': '~/.ssh/config'},
             \ ]
 
 let g:startify_enable_special = 0
