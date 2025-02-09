@@ -104,7 +104,30 @@ sh Miniconda3-latest-Linux-x86_64.sh
 ```
 
 ## Neovim
+### Updated (latest version) - install from source
 
+Check [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-source)
+
+```bash
+sudo apt-get install ninja-build gettext cmake unzip curl build-essential
+git clone https://github.com/neovim/neovim.git
+cd neovim
+git checkout v0.10.0
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+```
+
+**Update Node**
+```bash
+sudo n 22.0.0
+```
+
+#### Add copilot
+```vim
+:Copolot setup
+```
+
+### Old
 - Download stable nvim.appimage (0.6.1) from github releases:
 ```  
 mkdir ~/Downloads

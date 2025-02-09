@@ -31,8 +31,8 @@ fi
 # My scripts
 export PATH="/home/$USER/scripts:$PATH"
 
-export LgEvalDir="/home/$USER/Desktop/MathSeer/qdgga/tools/lgeval"
-export CROHMELibDir="/home/$USER/Desktop/MathSeer/qdgga/tools/crohmelib"     
+export LgEvalDir="/home/$USER/Desktop/Phd_Research/source_codes/active/graphics-extraction-chem-main/modules/lgap-parser/lgeval"
+export CROHMELibDir="/home/$USER/Desktop/Phd_Research/source_codes/inactive/qdgga/tools/crohmelib"     
 export PATH=$PATH:$CROHMELibDir/bin:$LgEvalDir/bin:$LgEvalDir/convert2symLG
 export PYTHONPATH=$PYTHONPATH:$(dirname "$CROHMELibDir"):$(dirname "$LgEvalDir"):
 # export QDGGA_TOOLS="/home/$USER/Desktop/MathSeer/qdgga/tools/"
