@@ -37,7 +37,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Themes
     Plug 'joshdick/onedark.vim'
     " Intellisense
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status Line
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -66,9 +66,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Zen mode
     " Plug 'junegunn/goyo.vim'
     " Snippets
-    Plug 'honza/vim-snippets'
-    Plug 'SirVer/ultisnips'
-    Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+    " Plug 'honza/vim-snippets'
+    " Plug 'SirVer/ultisnips'
+    " Plug 'quangnguyen30192/cmp-nvim-ultisnips'
     " Plug 'mattn/emmet-vim'
     " Interactive code
     " Plug 'metakirby5/codi.vim'
@@ -125,17 +125,28 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Highlight csv / tsv columns in sifferent colours.
     " Plug 'mechatroner/rainbow_csv'
     " Native LSP
-    Plug 'neovim/nvim-lspconfig'
-    Plug 'nvim-lua/completion-nvim'
-    Plug 'nvim-lua/diagnostic-nvim'
+    " Plug 'neovim/nvim-lspconfig'
+    " Plug 'nvim-lua/completion-nvim'
+    " Plug 'nvim-lua/diagnostic-nvim'
     " Plug 'hrsh7th/nvim-compe'
+    " Plug 'folke/neodev.nvim',
+    " Plug 'kabouzeid/nvim-lspinstall'
+
+    " Native LSP using mason
+    Plug 'williamboman/mason.nvim'
+    Plug 'williamboman/mason-lspconfig.nvim'
+    Plug 'neovim/nvim-lspconfig'
+    " Native LSP autocomplete
     Plug 'hrsh7th/cmp-nvim-lsp'
     Plug 'hrsh7th/cmp-buffer'
     Plug 'hrsh7th/cmp-path'
     Plug 'hrsh7th/cmp-cmdline'
     Plug 'hrsh7th/nvim-cmp'
-		Plug 'folke/neodev.nvim',
-    " Plug 'kabouzeid/nvim-lspinstall'
+
+    " Native LSP snippets
+    Plug 'SirVer/ultisnips'
+    Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+    Plug 'honza/vim-snippets'
 
     " Vim Snippets
     " Plug 'hrsh7th/cmp-vsnip'

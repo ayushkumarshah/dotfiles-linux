@@ -1,3 +1,14 @@
+require("mason").setup({
+    ui = {
+        icons = {
+            package_installed = "✓",
+            package_pending = "➜",
+            package_uninstalled = "✗"
+        }
+    }
+})
+require("mason-lspconfig").setup()
+-- require'lspconfig'.pyright.setup{}
 require'lspconfig'.pyright.setup{
   on_attach = function(client, bufnr)
 			local opts = {noremap = true, silent = true}

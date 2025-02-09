@@ -15,7 +15,7 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 " source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/blamer.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
-source $HOME/.config/nvim/plug-config/codi.vim
+" source $HOME/.config/nvim/plug-config/codi.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
 " source $HOME/.config/nvim/plug-config/vim-wiki.vim
 " source $HOME/.config/nvim/plug-config/goyo.vim
@@ -38,20 +38,21 @@ source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/ranger.vim
 " source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/nerd-commenter.vim
-source $HOME/.config/nvim/plug-config/sneak.vim
+" source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/ulti-snips.vim
 " luafile $HOME/.config/nvim/plug-config/copilot.lua
 source $HOME/.config/nvim/plug-config/copilot.vim
 source $HOME/.config/nvim/plug-config/vimtex.vim
 
-luafile $HOME/.config/nvim/lua/lsp/python-lsp.lua
+" luafile $HOME/.config/nvim/lua/lsp/python-lsp.lua
 " luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 " source $HOME/.config/nvim/plug-config/lsp-config.vim
 " luafile $HOME/.config/nvim/lua/lsp/lspinstall.lua
 " luafile $HOME/.config/nvim/lua/lsp/compe-config.lua
-luafile $HOME/.config/nvim/lua/lsp/cmp-config.lua
-luafile $HOME/.config/nvim/lua/lsp/lsp-config.lua
-" source $HOME/.config/nvim/plug-config/python-lsp.vim
+" luafile $HOME/.config/nvim/lua/lsp/cmp-config.lua
+" luafile $HOME/.config/nvim/lua/lsp/lsp-config.lua
+source $HOME/.config/nvim/plug-config/python-lsp.vim
+source $HOME/.config/nvim/plug-config/cmp-config.vim
 " lua require("lsp.lsp-config")
 
 " source $HOME/.config/nvim/plug-config/rainbow_parantheses.vim
