@@ -146,7 +146,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Native LSP snippets
     Plug 'SirVer/ultisnips'
     Plug 'quangnguyen30192/cmp-nvim-ultisnips'
-    Plug 'honza/vim-snippets'
+    " Plug 'honza/vim-snippets'
 
     " Vim Snippets
     " Plug 'hrsh7th/cmp-vsnip'
