@@ -31,10 +31,10 @@ fi
 # My scripts
 export PATH="/home/$USER/scripts:$PATH"
 
-export LgEvalDir="/home/$USER/Desktop/MathSeer/qdgga/tools/lgeval"
-export CROHMELibDir="/home/$USER/Desktop/MathSeer/qdgga/tools/crohmelib"     
+export LgEvalDir="/home/$USER/MathSeer/MathSeer_latest/modules/qdgga-parser/lgeval"
+export CROHMELibDir="/home/$USER/MathSeer/MathSeer_latest/modules/qdgga-parser/crohmelib"     
 export PATH=$PATH:$CROHMELibDir/bin:$LgEvalDir/bin:$LgEvalDir/convert2symLG
-export PYTHONPATH=$PYTHONPATH:$(dirname "$CROHMELibDir"):$(dirname "$LgEvalDir"):
+export PYTHONPATH=$PYTHONPATH:`dirname $CROHMELibDir`:`dirname $LgEvalDir`
 # export QDGGA_TOOLS="/home/$USER/Desktop/MathSeer/qdgga/tools/"
 # export PATH=$PATH:$QDGGA_TOOLS
 export PATH=$PATH:/home/$USER/bin
@@ -46,3 +46,4 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export JAVA_HOME=""

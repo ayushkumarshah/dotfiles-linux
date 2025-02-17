@@ -33,7 +33,7 @@
   "python.formatting.blackPath": "~/miniconda3/bin/black",
   "python.condaPath": "~/miniconda3/bin/conda",
   "python.jediEnabled": true,
-  "python.jediPath": "~/miniconda3/lib/python3.8/site-packages",
+  "python.jediPath": "~/miniconda3/lib/python3.9/site-packages",
   "python.sortImports.path":  "isort",
   // snippets
   "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
