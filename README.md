@@ -86,7 +86,7 @@ git clone git@github.com:ayushkumarshah/dotfiles-linux.git
   ln -svf ~/dotfiles-linux/.zshrc ~
   ln -svf ~/dotfiles-linux/.config/* ~/.config/
   ln -svf ~/dotfiles-linux/.tmux/ ~/.tmux
-  ln -svf ~/dotfiles-linux/.tmux/tmux.conf ~/.tmux.conf
+  ln -svf ~/dotfiles-linux/.tmux.conf ~/.tmux.conf
   cp ~/dotfiles-linux/.fonts/* ~/.fonts/
  ```
 ### Install tmux plugins
