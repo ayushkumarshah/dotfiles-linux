@@ -72,3 +72,9 @@ inoremap <expr> <c-k> ("\<C-p>")
 map <leader>c :w! \| !compile <c-r>%<CR><CR>
 " Open output pdf or html
 map <leader>o :!opout <c-r>%<CR><CR>
+
+" vnoremap <leader>y :OSCYankVisual<CR>
+ " let g:oscyank_term = 'tmux'
+ let g:oscyank_term = 'tmux'
+ let g:oscyank_max_length = 100000
+ vnoremap <leader>y :OSCYankVisual<CR>
