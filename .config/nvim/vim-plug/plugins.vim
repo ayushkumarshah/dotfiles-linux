@@ -140,6 +140,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Copilot
     Plug 'github/copilot.vim'
 
+    " Trying system clipboard to mac
+    Plug 'ojroques/vim-oscyank'
     call plug#end()
 
 
