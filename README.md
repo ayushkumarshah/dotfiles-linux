@@ -197,11 +197,16 @@ Neovim sessions are managed via `persistence.nvim`. Keybindings:
 
 ## dotsync2 Paths
 
-Add these to `dotsync2 paths edit` for persistence across OnDemands:
+The full dotsync2 paths config is saved in `dotsync2-paths.yml`. To restore on a fresh account:
 
+```bash
+./restore-dotsync2-paths.sh
 ```
-.z
-.local/share/tmux/resurrect-od
+
+To update the saved snapshot after editing paths:
+
+```bash
+dotsync2 paths list > dotsync2-paths.yml
 ```
 
 ---
