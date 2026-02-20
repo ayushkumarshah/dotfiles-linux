@@ -10,5 +10,6 @@
 !coc
 !i3
 !ranger
-!zsh
+!/zsh/
+!/zsh/**/*
 !rofi

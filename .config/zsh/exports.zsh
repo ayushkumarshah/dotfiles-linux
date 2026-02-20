@@ -27,22 +27,14 @@ fi
 
 # export PATH=/usr/bin/python3:$PATH
 # export HOMEBREW_BUNDLE_FILE=~/.Brewfile
+#
 
-# My scripts
-export PATH="/home/$USER/scripts:$PATH"
+export PATH=/home/shahayush/.cargo/bin/:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
-export LgEvalDir="/home/$USER/Desktop/MathSeer/qdgga/tools/lgeval"
-export CROHMELibDir="/home/$USER/Desktop/MathSeer/qdgga/tools/crohmelib"     
-export PATH=$PATH:$CROHMELibDir/bin:$LgEvalDir/bin:$LgEvalDir/convert2symLG
-export PYTHONPATH=$PYTHONPATH:$(dirname "$CROHMELibDir"):$(dirname "$LgEvalDir"):
-# export QDGGA_TOOLS="/home/$USER/Desktop/MathSeer/qdgga/tools/"
-# export PATH=$PATH:$QDGGA_TOOLS
-export PATH=$PATH:/home/$USER/bin
+export http_proxy="http://fwdproxy:8080"
+export https_proxy="http://fwdproxy:8080"
+export no_proxy=".fbcdn.net,.facebook.com,.thefacebook.com,.tfbnw.net,.fb.com,.fburl.com,.facebook.net,.sb.fbsbx.com,localhost"
+export NO_PROXY="$no_proxy"
 
-# Cuda 10.1
-export PATH=$PATH:/usr/local/cuda-10.1/bin
-export CUDADIR=/usr/local/cuda-10.1
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.1/lib64
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export CLAUDE_CODE_VERSION_OVERRIDE="latest"

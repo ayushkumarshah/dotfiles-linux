@@ -1,0 +1,1 @@
+/usr/local/claude-templates-cli/components/commands/obsidian.md

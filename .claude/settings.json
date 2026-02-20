@@ -1,0 +1,37 @@
+{
+  "fileSuggestion": {
+    "type": "command",
+    "command": "stdin=$(cat); query=$(echo \"$stdin\" | jq -r '.query // empty' 2>/dev/null); [ -z \"$query\" ] && exit 0; myles --list --client claude-code --limit 50 \"$query\" 2>/dev/null"
+  },
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "DISABLE_AUTOUPDATER": "1",
+    "STATUSLINE_ENABLE_STOCK": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Edit",
+      "Write",
+      "NotebookEdit"
+    ],
+    "additionalDirectories": [
+      "/data/users/shahayush/fbsource"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /home/shahayush/.claude/plugins/cache/claude-templates/meta-statusline-pro/1.2.0/bin/statusline.sh"
+  },
+  "enabledPlugins": {
+    "10x-engineer@claude-templates": true,
+    "feature-dev@claude-templates": true,
+    "meta-statusline-pro@claude-templates": true,
+    "obsidian@claude-templates": true,
+    "plan-gdoc-review@claude-templates": true,
+    "source-control-at-meta@claude-templates": true,
+    "data@claude-templates": true,
+    "para-workspace@claude-templates": true,
+    "datamate@claude-templates": true
+  }
+}

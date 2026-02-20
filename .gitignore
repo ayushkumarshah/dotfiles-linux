@@ -1,15 +1,39 @@
 .vscode
 .DS_Store
+
+# nvim
 .config/nvim/autoload/plugged/*
 .config/nvim/autoload
-.config/ranger/plugins/ranger_devicons
-.config/tmux
+.config/nvim/lazy-lock.json
+.config/nvim/.luarc.json
+.config/nvim/session
 .config/coc/*
 .config/configstore
-.config/nvim/session
+
+# ranger
+.config/ranger/plugins/ranger_devicons
 .config/ranger/bookmarks
 .config/ranger/history
 .config/htop/
+.config/tmux
+
+# tmux
 .tmux/plugins
 .tmux/resurrect
+
+# claude runtime data
+.claude/debug/
+.claude/history.jsonl
+.claude/file-history/
+.claude/paste-cache/
+.claude/ide/
+.claude/backups/
+.claude/plans/
+.claude/plan-gdoc-state/
+.claude/meta/
+
+# Company-specific configs
+.claude/CLAUDE.md
+.gitconfig
+
 neovim/
