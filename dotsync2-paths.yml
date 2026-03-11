@@ -158,7 +158,7 @@ include:
   - ".wgetrc"
   - ".xinitrc"
   - ".yadr"
-  - ".z"
+  - ".z": history
   - ".zhistory": history
   - ".znc"
   - ".zpreztorc"
