@@ -19,9 +19,10 @@
       "/data/users/shahayush/fbsource"
     ]
   },
+  "model": "opus[1m]",
   "statusLine": {
     "type": "command",
-    "command": "bash /home/shahayush/.claude/plugins/cache/claude-templates/meta-statusline-pro/1.2.0/bin/statusline.sh"
+    "command": "bash \"$(find $HOME/.claude/plugins/cache -path '*/meta-statusline-pro/*/bin/statusline.sh' 2>/dev/null | sort -V | tail -1)\""
   },
   "enabledPlugins": {
     "10x-engineer@claude-templates": true,
