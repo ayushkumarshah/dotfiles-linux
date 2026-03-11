@@ -1,3 +1,8 @@
+# History
+export HISTFILE="$HOME/.zsh_history"
+export HISTSIZE=50000
+export SAVEHIST=50000
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -37,4 +42,7 @@ export https_proxy="http://fwdproxy:8080"
 export no_proxy=".fbcdn.net,.facebook.com,.thefacebook.com,.tfbnw.net,.fb.com,.fburl.com,.facebook.net,.sb.fbsbx.com,localhost"
 export NO_PROXY="$no_proxy"
 
-export CLAUDE_CODE_VERSION_OVERRIDE="latest"
+# export CLAUDE_CODE_VERSION_OVERRIDE="latest"
+export META_CLAUDE_CODE_RELEASE="latest"
+export META_CLAUDE_USE_GCP_DIRECT=0
+export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
