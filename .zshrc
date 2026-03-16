@@ -14,6 +14,15 @@ source /usr/facebook/ops/rc/master.zshrc
 [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
 
 
+# Auto-mount Google Drive (fast: skips if already mounted)
+if [ -f "$HOME/bin/gdrive-mount.sh" ]; then
+  ~/bin/gdrive-mount.sh &
+  disown 2>/dev/null
+fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+# Google Drive auto-mount (managed by gdrive-mount plugin)
+source ~/.claude/gdrive-mount-scripts/auto-mount.sh
+source ~/.claude/gdrive-mount-scripts/vscode-workspace.sh
