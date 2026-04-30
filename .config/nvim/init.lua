@@ -1,3 +1,12 @@
+-- Suppress unsupported LSP method notifications (e.g. MetaMate's textDocument/inlineCompletions)
+local original_notify = vim.notify
+vim.notify = function(msg, level, opts)
+  if type(msg) == "string" and msg:find("textDocument/inlineCompletions") then
+    return
+  end
+  original_notify(msg, level, opts)
+end
+
 -- Plugin Manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
