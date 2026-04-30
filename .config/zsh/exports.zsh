@@ -44,5 +44,8 @@ export NO_PROXY="$no_proxy"
 
 # export CLAUDE_CODE_VERSION_OVERRIDE="latest"
 export META_CLAUDE_CODE_RELEASE="latest"
-export META_CLAUDE_USE_GCP_DIRECT=0
+export META_CLAUDE_USE_GCP_DIRECT=1
 export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
+export CLAUDE_CODE_NO_FLICKER=1
+# export CLAUDE_CODE_EFFORT_LEVEL="max"  # disabled: env var blocks /effort mid-session; using settings.json effortLevel instead
+export CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING=1
