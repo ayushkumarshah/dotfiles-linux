@@ -17,10 +17,14 @@ include:
   - ".cfagent"
   - ".cfmrc"
   - ".chef"
-  - ".claude/": union
+  - ".claude/"
+  - ".claude/gdrive-mount-scripts/"
   - ".claude/history.jsonl": history
+  - ".claude/meta/preset/.claude/settings.json"
   - ".client_history": history
   - ".cmake"
+  - ".codex/"
+  - ".codex/history.jsonl": history
   - ".condarc"
   - ".config"
   - ".config/rclone/rclone.conf"
@@ -79,13 +83,15 @@ include:
   - ".kde"
   - ".kderc"
   - ".llms"
-  - ".llms/": union
+  - ".llms/"
   - ".local/bin/"
   - ".local/share/fish/fish_history": history
   - ".local/share/mint/.mint_shell_history": history
   - ".local/share/powershell/PSReadLine/ConsoleHost_history.txt": history
   - ".local/share/tmux"
   - ".local/state/nvim"
+  - ".local/state/opencode/kv.json"
+  - ".local/state/opencode/prompt-history.jsonl": history
   - ".luahistory": history
   - ".matplotlib"
   - ".maui-con-presets"
@@ -157,6 +163,7 @@ include:
   - ".zshenv"
   - ".zshrc"
   - bin
+  - bin/gdrive-mount.sh
   - dotfiles
   - dotfiles-linux/
   - ranger/
@@ -166,8 +173,20 @@ exclude:
   - ".claude/CLAUDE.local/"
   - ".claude/debug/"
   - ".claude/meta"
+  - ".claude/meta/"
   - ".claude/plugins/cache"
+  - ".claude/plugins/known_marketplaces.json"
   - ".claude/settings.local.json"
+  - ".claude/worktrees"
+  - ".codex/.credentials.json"
+  - ".codex/auth.json"
+  - ".codex/log/"
+  - ".codex/logs_1.sqlite"
+  - ".codex/logs_1.sqlite-shm"
+  - ".codex/logs_1.sqlite-wal"
+  - ".codex/state_5.sqlite"
+  - ".codex/state_5.sqlite-shm"
+  - ".codex/state_5.sqlite-wal"
   - ".config/Google"
   - ".config/JetBrains"
   - ".config/dotsync/settings.json"
@@ -176,4 +195,7 @@ exclude:
   - ".config/systemd"
   - ".config/yarn"
   - ".local/share/nvim/meta-vscode-exts"
+  - ".local/share/opencode"
+  - ".local/share/opencode/"
+  - ".phabricator_cats"
   - ".pki/nssdb/"
