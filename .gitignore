@@ -33,7 +33,6 @@
 .claude/meta/
 
 # Company-specific configs
-.claude/CLAUDE.md
 .gitconfig
 
 neovim/
